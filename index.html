@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl.theme.default.min.css">
+    <link rel="stylesheet" href="All css/responsive.css" class="css">
+    <link rel="stylesheet" href="All css/Style.css">
+    <link rel="icon" type="image/png" href="">
+    <title>Netflix Web</title>
+</head>
+
+<body>
+    <header>
+        <Div class="container">
+            <h2 class="logo">ALURAFLIX</h2>
+            <nav class="sideNav">
+                <div class="itens">
+                    <a class="closeButton" href="#" onclick="closeMenu()"><i class="fas fa-times"></i></a>
+                    <a class="sub-side" href="#inicioOn">Inicio</a>
+                    <a class="sub-side" href=" #Series1 ">Séries</a>
+                    <a class="sub-side" href=" #filmes1 ">Filmes</a>
+                    <a class="sub-side" href=" #Animes1">Animes</a>
+                </div>
+                <a class="addFilme" onclick="openMenuFilm()"><i class="fas fa-plus"></i></a>
+                <a class="opcaoBotton" href="#" onclick="openMenu()"><i class="fas fa-align-justify" id="menu"></i> </a>
+            </nav>
+            <div id="menuCadastro">
+                <div>
+                    <h3>Adicione seus Filmes</h3>
+                    <a href="#" onclick="closeMenuFilm()">
+                        <i class="fas fa-times"></i> </a>
+                    <label class="tituloBox">Link da Imagem</label>
+                    <input type="text" placeholder="Img Film" id="textImg">
+                    <label class="tituloBox">Descrição do filme</label>
+                    <input type="text" placeholder="desc Film" id="textMore">
+                    <div>
+                        <button onclick="addFilmClick()"> Adicionar</button>
+                        <button onclick="clearInput()"> Limpar</button>
+                    </div>
+                </div>
+            </div>
+        </Div>
+    </header>
+    <main>
+        <div class="filmePrincipal">
+            <div class="container">
+                <h3 class="titulo"> The Mandalorian </h3>
+                <p class="descricao"> A saga de um guerreiro solitário, que também é um mercenário e pistoleiro,
+                    viajando pelos territórios esquecidos e marginais do espaço, logo após a queda do Império e antes da
+                    criação da temida Primeira Ordem. </p>
+                <a href="https://youtu.be/aOC8E8z_ifw" target="_blank"> <button role="button" class="botao"><i
+                            class="fas fa-play"></i> ASSISTIR AGORA </button> </a>
+                <a href="https://www.imdb.com/title/tt8111088/?ref_=nv_sr_srsg_0" target="_blank"> <button role="button"
+                        class="botao"><i class="fas fa-info"></i></i> MAIS INFORMAÇÕES </button> </a>
+            </div>
+        </div>
+    </main>
+    <p class="tituloAll">LISTA DO USUARIO</p>
+    <div class="carouselUser" id="inicioOn">
+        <div class="owl-carousel owl-theme" id="listUser">
+        
+        </div>
+
+    </div>
+    <p class="tituloAll">FILMES</p>
+    <div class="carouselFilmes" id="filmes1">
+        <div class="owl-carousel owl-theme">
+            <a href="https://www.imdb.com/title/tt9140554/?ref_=nv_sr_srsg_0" target="_blank">
+                <img class="boxFilme"
+                    src="https://cdn.discordapp.com/attachments/470791942754664458/825495861277491203/MV5BOGU0OWQyMjItYzA4Zi00MDFiLThiZWQtZmEyNWRiODAzYzNmXkEyXkFqcGdeQXVyMTkxNjUyNQ.png">
+            </a>
+            <a href="https://www.imdb.com/title/tt4154796/?ref_=nv_sr_srsg_0" target="_blank">
+                <img class="boxFilme"
+                    src="https://cdn.discordapp.com/attachments/470791942754664458/825495914683826207/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM.png"/></a>
+            <a href="https://www.imdb.com/title/tt12361974/?ref_=nv_sr_srsg_0" target="_blank">
+                <img class="boxFilme"
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/v9XwEXYWpxt2rpkmFBiQ1zeyKUy.jpg"/></a>
+            <a href="https://www.imdb.com/title/tt7126948/?ref_=nv_sr_srsg_0" target="_blank">
+                <img class="boxFilme"
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/AweDlIiohqw4sjC7gCsPVd1zo77.jpg"/></a>
+            <a href="https://www.imdb.com/title/tt6475714/?ref_=nv_sr_srsg_0" target="_blank">
+                <img class="boxFilme"
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/2QhhILPAv7MKFd1q57ssQeEV2su.jpg"/></a>
+            <a href="https://www.imdb.com/title/tt10451914/?ref_=nv_sr_srsg_0" target="_blank"><img class="boxFilme"
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/vnVQx7MJMwTvqcn5pkYDImxzlMg.jpg"/>
+            </a>
+            <a href="https://www.imdb.com/title/tt9845564/?ref_=nv_sr_srsg_0" target="_blank">
+                <img class="boxFilme"
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/rofFkTuMwwIJpWJVQaTRYqfQuoN.jpg" /></a>
+            <a href="https://www.imdb.com/title/tt3741700/?ref_=nv_sr_srsg_3" target="_blank">
+                <img class="boxFilme"
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/2umU3r6V4V2gTmSnZJmH61nTorF.jpg" /></a>
+            <a href="https://www.imdb.com/title/tt2948372/?ref_=nv_sr_srsg_0" target="_blank">
+                <img class="boxFilme"
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/bzDAfXoqNAvWUe7uss2NE3BmRqy.jpg" /></a>
+            <a href="https://www.imdb.com/title/tt1361336/?ref_=nv_sr_srsg_0" target="_blank">
+                <img class="boxFilme"
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/6KErczPBROQty7QoIsaa6wJYXZi.jpg" /></a>
+            <a href="https://www.imdb.com/title/tt5034838/?ref_=nv_sr_srsg_0" target="_blank">
+                <img class="boxFilme"
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/klAIFewuqcyEmH1SMtR2XbMyqzM.jpg" /></a>
+        </div>
+
+    </div>
+    <p class="tituloAll">ANIMES</p>
+    <div class="carouselAnimes" id="Animes1">
+        <div class="owl-carousel owl-theme">
+            <a href="https://www.imdb.com/title/tt2560140/?ref_=nv_sr_srsg_0" target="_blank"> <img class="boxAnimes"
+                    src="https://m.media-amazon.com/images/M/MV5BMTY5ODk1NzUyMl5BMl5BanBnXkFtZTgwMjUyNzEyMTE@._V1_UX182_CR0,0,182,268_AL_.jpg"></img>
+            </a>
+            <a href="https://www.imdb.com/title/tt0421357/?ref_=nv_sr_srsg_6" target="_blank"> <img class="boxAnimes"
+                    src="https://m.media-amazon.com/images/M/MV5BMjYwNDlhMWYtMWE1ZS00ZjVhLWI1NzItMjQ5ZGI4NTIwZjQ5L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg"></img></a>
+            <a href="https://www.imdb.com/title/tt1355642/?ref_=nv_sr_srsg_3" target="_blank"> <img class="boxAnimes"
+                    src="https://m.media-amazon.com/images/M/MV5BZmEzN2YzOTItMDI5MS00MGU4LWI1NWQtOTg5ZThhNGQwYTEzXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY268_CR4,0,182,268_AL_.jpg"></img></a>
+            <a href="https://www.imdb.com/title/tt0278238/?ref_=nv_sr_srsg_0" target="_blank"> <img class="boxAnimes"
+                    src="https://m.media-amazon.com/images/M/MV5BZWQ2MDNiNTItYmM3ZS00MmI4LWFlMDQtOGVhYzlhZmZkNzI0L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg"></img></a>
+            <a href="https://www.imdb.com/title/tt1214085/?ref_=nv_sr_srsg_0" target="_blank"> <img class="boxAnimes"
+                    src="https://m.media-amazon.com/images/M/MV5BNTdiNTJmMzktZmE2MC00OWUxLWE1MjktMTdhN2Q1OWNlODY1L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY268_CR21,0,182,268_AL_.jpg"></img></a>
+            <a href="https://www.imdb.com/title/tt1214085/?ref_=nv_sr_srsg_0" target="_blank"> <img class="boxAnimes"
+                    src="https://m.media-amazon.com/images/M/MV5BYjhlYWI2MGUtNjk4ZS00OWJjLWJiZTEtYWYxNTY5MzVhYzI0XkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_UY268_CR1,0,182,268_AL_.jpg"></img></a>
+            <a href="https://www.imdb.com/title/tt11107074/?ref_=nv_sr_srsg_6" target="_blank"> <img class="boxAnimes"
+                    src="https://m.media-amazon.com/images/M/MV5BMWJhOTM5YTktYjFhMS00ZjhiLWIzNjMtMjU2YmNlYmMzYTMwXkEyXkFqcGdeQXVyODEyMDIxNDY@._V1_UY268_CR9,0,182,268_AL_.jpg"></img></a>
+            <a href="https://www.imdb.com/title/tt8993398/?ref_=nv_sr_srsg_0" target="_blank"> <img class="boxAnimes"
+                    src="https://m.media-amazon.com/images/M/MV5BMGQ1ZjYzOGQtOWFhNy00YzQwLWEyYmItZGYwODQ4NDU3MDhlXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_UX182_CR0,0,182,268_AL_.jpg"></img></a>
+            <a href="https://www.imdb.com/title/tt0210418/?ref_=nv_sr_srsg_0" target="_blank"> <img class="boxAnimes"
+                    src="https://m.media-amazon.com/images/M/MV5BNGJhOGJmZGItNjQwZS00MzQ5LTg0MDMtYTc3YzAwMDc4YjFmL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UX182_CR0,0,182,268_AL_.jpg"></img></a>
+            <a href="https://www.imdb.com/title/tt0168366/?ref_=nv_sr_srsg_3" target="_blank"> <img class="boxAnimes"
+                    src="https://m.media-amazon.com/images/M/MV5BNjU1YjM2YzAtZWE2Ny00ZWNiLWFkZWItMDJhMzJiNDQwMmI4XkEyXkFqcGdeQXVyNTU1MjgyMjk@._V1_UY268_CR4,0,182,268_AL_.jpg"></img></a>
+
+        </div>
+
+    </div>
+
+    <p class="tituloAll">SERIES</p>
+    <div class="carouselSeries" id="Series1">
+
+        <div class="owl-carousel owl-theme">
+            <a href="https://www.imdb.com/title/tt9208876/?ref_=nv_sr_srsg_0" target="_blank"> <img class="boxSeries"
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/w8Hi3GI4q1oR6EImrDWrAQFn8Ha.jpg"></img> </a>
+            <a href="https://www.imdb.com/title/tt3107288/?ref_=nv_sr_srsg_0" target="_blank"> <img class="boxSeries"
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/wHa6KOJAoNTFLFtp7wguUJKSnju.jpg"></img></a>
+            <a href="https://www.imdb.com/title/tt1520211/?ref_=nv_sr_srsg_0" target="_blank"><img class="boxSeries"
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/reKs8y4mPwPkZG99ZpbKRhBPKsX.jpg"></img></a>
+            <a href="https://www.imdb.com/title/tt4052886/?ref_=nv_sr_srsg_0" target="_blank"><img class="boxSeries"
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/1sBx2Ew4WFsa1YY32vlHt079O03.jpg"></img></a>
+            <a href="https://www.imdb.com/title/tt8103070/" target="_blank"><img class="boxSeries"
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/roFJeeBbcFYCaTfmKaCQ7wtCT5l.jpg"></img></a>
+            <a href="https://www.imdb.com/title/tt7221388/?ref_=nv_sr_srsg_0" target="_blank"><img class="boxSeries"
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/eTMMU2rKpZRbo9ERytyhwatwAjz.jpg"></img></a>
+            <a href="https://www.imdb.com/title/tt0413573/?ref_=nv_sr_srsg_2" target="_blank"> <img class="boxSeries"
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/1HAm7sxXu9eGVvs8BIAlkCKGaTd.jpg"></img></a>
+            <a href="https://www.imdb.com/title/tt11192306/?ref_=nv_sr_srsg_3" target="_blank"> <img class="boxSeries"
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/6SJppowm7cdQgLkvoTlnTUSbjr9.jpg"></img></a>
+            <a href="https://www.imdb.com/title/tt4047038/?ref_=nv_sr_srsg_0" target="_blank"> <img class="boxSeries"
+                    src="https://m.media-amazon.com/images/M/MV5BMTU3MDkzNzM5NF5BMl5BanBnXkFtZTgwMzEyNTgyMDI@._V1_UX182_CR0,0,182,268_AL_.jpg"></img>
+        </div>
+
+    </div>
+    <footer>
+        <a href="https://github.com/Gabriel-P22" target="_blank"><img class="gitHub"
+                src="https://cdn.discordapp.com/attachments/824429137010753566/826540674475884565/GitHub-Mark.png"></a>
+        <a href="https://www.linkedin.com/in/gabriel-paschoal-0987a2202/" target="_blank"> <img
+                src="https://cdn.discordapp.com/attachments/470791942754664458/823701202743197766/linkedin-logo.png"></a>
+    </footer>
+    <script src="https://kit.fontawesome.com/dbd82e1d27.js" crossorigin="anonymous"></script>
+    <script src="owl/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="owl/owl.carousel.min.js" crossorigin="anonymous"></script>
+    <script src="Flix.js"></script>
+
+</body>
+
+</html>

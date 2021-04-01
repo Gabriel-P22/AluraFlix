@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos Base*/
+
+Body {
+    background: var(--preto);
+    font-size: 'Times New Roman', times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+}
+
+header nav a:hover {
+    color: #ffffff;
+}
+
+#menu {
+    margin-right: 20px;
+    font-size: 20px;
+    height: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    float: right;
+}
+
+.opcaoBotton {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.itens {
+    position: absolute;
+    right: 15px;
+    font-size: 30px;
+}
+
+.itens a {
+    display: block;
+    margin-top: 40px;
+}
+
+.itens {
+    background: rgba(0, 0, 0, 0.7);
+    color: red;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 99;
+    align-items: center;
+    transition: all 2.1s;
+}
+
+.itens.open {
+    right: 0;
+}
+
+.addFilme {
+    cursor: pointer;
+}
+
+/* Menu cadastro*/
+
+#menuCadastro {
+    position: fixed;
+    right: 0;
+    top: -100%;
+    transition: all 2s;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    border-radius: 0 0 10px 30px;
+    border: 1px solid white;
+}
+
+#menuCadastro>div{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#menuCadastro.open{
+    top: 0;
+}
+
+#menuCadastro>div {
+    position: relative;
+}
+
+#menuCadastro input {
+    margin: 5px;
+}
+
+#menuCadastro button {
+    width: 80px;
+    margin-top: 8px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+button:focus {
+    outline: 0;
+}
+
+#menuCadastro a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 15px;
+    color: white;
+}
+
+/*Filme preincipal*/
+
+.filmePrincipal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) 100%), url('https://www.themoviedb.org/t/p/original/mleEJUPlGvckJWHMNZVjpPGMSL8.jpg');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filmePrincipal .descricao {
+    margin-bottom: 40px;
+}
+
+.titulo {
+    font-size: 50px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-top: 15%;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, 0.50);
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao:focus {
+    outline: 0;
+}
+
+.botao i {
+    margin-right: 15px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.filmePrincipal .container {
+    width: 70%;
+}
+/* Todos os Títulos do Carousels*/
+.tituloAll{
+    color: red;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+/*Nome dos catálogos*/
+.catalogoNome{
+    
+    background: white;
+    color: black;
+    
+}
+
+.catalogoimg{
+    border:8px solid black;
+}
+
+/*Todos os Carousels do código*/
+.boxFilme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    
+}
+.boxFilme:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.boxAnimes {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.boxAnimes:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.boxUser {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.boxUser:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.boxSeries {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.boxSeries:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.carouselFilmes {
+    margin-top: 15px;
+    display: flex;
+}
+
+.carouselSeries {
+    margin-top: 15px;
+    display: flex;
+}
+
+.carouselAnimes {
+    margin-top: 15px;
+    display: flex;
+}
+
+/* Barra de Rolagem */
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-button {
+    width: 33px;
+    height: 33px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bb1616;
+    border: 0px none #ffffff;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b54040;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #ea4848;
+}
+
+::-webkit-scrollbar-track {
+    background: #7f7a7a;
+    border: 0px none #ffffff;
+    border-radius: 21px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #8b8989;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #bcb9b9;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+/*estilo do painel de adição*/
+.tituloBox{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#menuCadastro div input{
+    border-radius: 6px;
+    
+}
+/*Rodapé*/
+
+footer{
+    background: var(--vermelho);
+    border-radius: 2px;
+    border: 1px solid preto ;
+    width: auto;
+    height: 25px;
+    opacity: 0.6;
+    
+}
+
+footer a img{
+    width: 19px;
+    margin-top: 3px;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;  
+}
+.gitHub{
+    position: absolute;
+    width: 15px;
+    left: 0;
+    margin-left: 5px;
+    margin-top: 4px;
+    cursor: pointer;
+    border: 1px solid black;
+}
